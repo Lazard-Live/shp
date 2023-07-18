@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 
 function App() {
 
@@ -20,7 +20,6 @@ function App() {
 
                 <div>
                     <a href={'https://discord.gg/D7rskdhQ'}>Сообщество Discord</a>
-
                 </div>
 
             </div>
