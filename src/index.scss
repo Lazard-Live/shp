@@ -1,5 +1,9 @@
 /* Глобальные стили */
 @import "src/global/index.scss";
 
+/* Блоки */
+
+@import "src/blocks/card/card";
+
 /* Дополнительно */
 @import "lib/normalize.css";

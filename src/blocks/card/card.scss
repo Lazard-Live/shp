@@ -1,0 +1,29 @@
+.card {
+  height: 100%;
+  padding: 0.4rem;
+  border: 1px solid $color-link;
+  border-radius: 14px;
+
+  &__title {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__text {
+
+    // надо подумать что добавить!
+
+    &_left {
+      text-align: left;
+    }
+  }
+
+  &__link {
+    margin-left: 8px;
+
+    a {
+      font-weight: bold;
+      margin-left: 8px;
+    }
+  }
+}

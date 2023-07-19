@@ -22,12 +22,12 @@ html {
 }
 
 :root {
- font-family: Rubik, sans-serif;
+  font-family: $font-primary;
   font-weight: normal;
   line-height: 1.5;
 
-  color: #242424;
-  background-color:rgba(255, 255, 255, 0.87);
+  color: $color-text;
+  background-color: $color-grey;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,7 +37,6 @@ html {
 
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -47,14 +46,18 @@ body {
   justify-content: center;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: $color-link;
   text-decoration: inherit;
 }
+
 a:hover {
-  color: #535bf2;
+  color: $color-link-active;
+}
+
+h1 {
+  font-size: 1.4rem;
 }
