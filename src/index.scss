@@ -2,8 +2,11 @@
 @import "src/global/index.scss";
 
 /* Блоки */
-
+@import "src/blocks/root";
+@import "src/blocks/header";
+@import "src/blocks/footer";
 @import "src/blocks/card/card";
+@import "src/blocks/title";
 
 /* Дополнительно */
 @import "lib/normalize.css";
