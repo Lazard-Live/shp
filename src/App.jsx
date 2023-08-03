@@ -1,35 +1,67 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+            <header className={'header'}>
+                <div className="row">
+                    <div className="col-sm-12">
+                        <h1 className={'title title_center'}>Выбери что нужно</h1>
+                    </div>
+                </div>
+
+            </header>
+
+            <section className={'section root__content'}>
+                <div className={'container'}>
+                    <div className={'row'}>
+                        <div className={'col-sm-12 col-md-6'}>
+                            <div className={'card'}>
+                                <div className={'card__img'}>
+                                    <div className="card__title">Домашние ресурсы</div>
+                                </div>
+
+                                <div className="card__text">
+                                    <div className={'card__link'}>
+                                        1.<a href={'https://78.36.1.133:443/'}>
+                                        Proxmax VM</a>
+                                    </div>
+                                    <div className={'card__link'}>
+                                        2.<a href={'http://78.36.1.133:8080/'}>
+                                        Torrent WEB
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={'col-md-6 col-lg-6'}>
+                            <div className={'card'}>
+                                <div className={'card__img'}>
+                                    <div className="card__title">
+                                        Личные игровые серверы для relax'а
+                                    </div>
+                                </div>
+
+                                <div className="card__text">
+                                    <div>Minecraft: 78.36.1.133:3003
+                                        <div>Версия игры: Forge 1.20.1</div>
+                                        <div> Вход по белому листу</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer className={'footer'}>
+                <div className="container-fluid">
+                    <a className={'footer__link'} href={'https://discord.gg/D7rskdhQ'}>Discord</a>
+                    <a className={'footer__link'} href={'https://t.me/workbd'}>Telegram</a>
+                </div>
+            </footer>
+        </>
+    )
 }
 
 export default App

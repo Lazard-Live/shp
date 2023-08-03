@@ -1,0 +1,47 @@
+.card {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 200px;
+  border: 1px solid $color-link;
+  border-radius: 14px;
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 1rem;
+    position: relative;
+    content: '';
+    border-radius: 12px 12px  0 0;
+    background-color: #535bf2;
+    width: 100%;
+  }
+
+  &__title {
+    padding: 4px;
+    font-family: Cakra,sans-serif;
+    color: $color-white;
+  }
+
+  &__text {
+    height: 100%;
+    padding: 12px;
+
+    &_left {
+      text-align: left;
+    }
+  }
+
+  &__link {
+    margin-left: 8px;
+
+    a {
+      font-weight: bold;
+      margin-left: 8px;
+    }
+  }
+}

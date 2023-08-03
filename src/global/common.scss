@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+
+  @include screen-up(sm) {
+    font-size: 14px;
+  }
+
+  @include screen-up(md) {
+    font-size: 18px;
+  }
+
+  @include screen-up(lg) {
+    font-size: 20px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-family: $font-primary;
+  font-weight: normal;
+  line-height: 1.5;
+
+  color: $color-text;
+  background-color: $color-grey;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+}
+
+a {
+  font-weight: 500;
+  color: $color-link;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: $color-link-active;
+}
