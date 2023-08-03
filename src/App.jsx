@@ -2,10 +2,12 @@ function App() {
 
     return (
         <>
-            <header className={'header'}>
-                <div className="row">
-                    <div className="col-sm-12">
-                        <h1 className={'title title_center'}>Выбери что нужно</h1>
+            <header className={'section header'}>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <h1 className={'title'}>Выбери что нужно</h1>
+                        </div>
                     </div>
                 </div>
 
